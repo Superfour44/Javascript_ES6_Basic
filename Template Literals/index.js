@@ -23,7 +23,7 @@ last = ${last}
 city = ${city}` 
 console.log(allname2)
 
-
+//--------------------------------------------------------------------------
 // Destructuring Object
 
 //old format
