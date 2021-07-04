@@ -27,7 +27,7 @@ class Admin{
     }
 }
 
-class UserNewFormat extends Admin{
+class UserNewFormat extends Admin{//inheritance of class Admin
     constructor(name,age){
         super() // use constructor of mother class is "Admin"
         this.name = name
