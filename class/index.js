@@ -18,9 +18,18 @@ var user1 = new User("Four",25); // object of class user
 
 
 // new format
-
-class UserNewFormat{
+class Admin{
     constructor(name,age){
+        console.log("Call Constructure")
+    }
+    isPermission(){
+        console.log("Read Write Data From Database")
+    }
+}
+
+class UserNewFormat extends Admin{
+    constructor(name,age){
+        super() // use constructor of mother class is "Admin"
         this.name = name
         this.age = age
     }
@@ -31,3 +40,4 @@ class UserNewFormat{
 
 let user2 = new UserNewFormat("SuperFour",29)
 user2.Sayhi()
+user2.isPermission()
